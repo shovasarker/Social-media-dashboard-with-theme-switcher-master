@@ -1,0 +1,43 @@
+.container {
+    &.light-theme {
+        background: $white;
+        color: $darkGrayishBlue;
+        .container{
+            &__overlay {
+                background-color: $veryPaleBlue;
+            }
+            &__title > h2 {
+                color: $veryDarkBlue;
+            }
+
+            &__followers-card {
+                background-color: $lightGrayishBlue;
+
+                &-body > h1 {
+                    color: $veryDarkBlue;
+                }
+            }
+
+            &__daily {
+
+                > h2 {
+                    color: $veryDarkBlue;
+                }
+
+                &-card {
+                    background-color: $lightGrayishBlue;
+
+                    &-numbers > h1 {
+                        color: $veryDarkBlue;
+                    }
+                }
+            }
+
+        }
+        .hover-overlay {
+            &::before {
+                background-color: $veryDarkBlue;
+            }
+        }
+    }
+}

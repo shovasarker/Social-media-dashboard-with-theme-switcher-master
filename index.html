@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="./js/main.js" defer></script>
+    <title>Frontend Mentor | Social Media Dashboard</title>
+
+  </head>
+  <body>
+    <div class="container">
+
+      <div class="container__overlay"></div>
+
+      <!-- Header Section -->
+      <div class="container__header">
+        <div class="container__title">
+          <h2>Social Media Dashboard</h2>
+          <p>Total Followers: 23,004</p>
+        </div>
+        <div class="container__theme-toggle">
+          <span>Dark Mode</span>
+          <div class="container__switch">
+            <input type="checkbox" id="checkbox">
+            <span id ="toggle"class="slider"></span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4 Column Grid Section -->
+      <div class="container__social-followers">
+
+        <!-- Card one -->
+        <div class="container__followers-card facebook hover-overlay">
+          <div class="border"></div>
+          <div class="container__followers-card-body">
+            <div class="container__followers-card-title">
+              <img src="./images/icon-facebook.svg" alt="facebook">
+              <span>@nathanf</span>
+            </div>
+            <h1>1987</h1>
+            <span>Followers</span>
+            <div class="follower-change">
+              <img src="./images/icon-up.svg" alt="inceased">
+              <span class="increase">12 Today</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card two -->
+        <div class="container__followers-card twitter hover-overlay">
+          <div class="border"></div>
+          <div class="container__followers-card-body">
+            <div class="container__followers-card-title">
+              <img src="./images/icon-twitter.svg" alt="facebook">
+              <span>@nathanf</span>
+            </div>
+            <h1>1044</h1>
+            <span>Followers</span>
+            <div class="follower-change">
+              <img src="./images/icon-up.svg" alt="inceased">
+              <span class="increase">99 Today</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card three -->
+        <div class="container__followers-card instagram hover-overlay">
+          <div class="border"></div>
+          <div class="container__followers-card-body">
+            <div class="container__followers-card-title">
+              <img src="./images/icon-instagram.svg" alt="facebook">
+              <span>@realnathanf</span>
+            </div>
+            <h1>11k</h1>
+            <span>Followers</span>
+            <div class="follower-change">
+              <img src="./images/icon-up.svg" alt="inceased">
+              <span class="increase">1099 Today</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card four -->
+        <div class="container__followers-card youtube hover-overlay">
+          <div class="border"></div>
+          <div class="container__followers-card-body">
+            <div class="container__followers-card-title">
+              <img src="./images/icon-youtube.svg" alt="facebook">
+              <span>Nathan F.</span>
+            </div>
+            <h1>8239</h1>
+            <span>Subscribers</span>
+            <div class="follower-change">
+              <img src="./images/icon-down.svg" alt="inceased">
+              <span class="decrease">144 Today</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Daily News -->
+      <div class="container__daily">
+
+        <h2>Overview - Today</h2>
+
+        <div class="container__daily-grid">
+
+          <!-- card 1 -->
+          <div class="container__daily-card hover-overlay">
+            <div class="container__daily-card-header">
+              <span>Page Views</span>
+              <img src="./images/icon-facebook.svg" alt="facebook">
+            </div>
+            <div class="container__daily-card-numbers">
+              <h1>87</h1>
+              <div class="follower-change">
+                <img src="./images/icon-up.svg" alt="increased">
+                <p class="increase">3%</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- card 2 -->
+          <div class="container__daily-card hover-overlay">
+            <div class="container__daily-card-header">
+              <span>Likes</span>
+              <img src="./images/icon-facebook.svg" alt="facebook">
+            </div>
+            <div class="container__daily-card-numbers">
+              <h1>52</h1>
+              <div class="follower-change">
+                <img src="./images/icon-up.svg" alt="increased">
+                <p class="increase">2%</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- card 3 -->
+          <div class="container__daily-card hover-overlay">
+            <div class="container__daily-card-header">
+              <span>Likes</span>
+              <img src="./images/icon-instagram.svg" alt="facebook">
+            </div>  
+            <div class="container__daily-card-numbers">
+              <h1>5462</h1>
+              <div class="follower-change">
+                <img src="./images/icon-up.svg" alt="increased">
+                <p class="increase">2257%</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- card 4 -->
+          <div class="container__daily-card hover-overlay">
+            <div class="container__daily-card-header">
+              <span>Profile Views</span>
+              <img src="./images/icon-instagram.svg" alt="facebook">
+            </div>
+            <div class="container__daily-card-numbers">
+              <h1>52k</h1>
+              <div class="follower-change">
+                <img src="./images/icon-up.svg" alt="increased">
+                <p class="increase">1375%</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- card 5 -->
+          <div class="container__daily-card hover-overlay">
+            <div class="container__daily-card-header">
+              <span>Retweets</span>
+              <img src="./images/icon-twitter.svg" alt="facebook">
+            </div>
+            <div class="container__daily-card-numbers">
+              <h1>117</h1>
+              <div class="follower-change">
+                <img src="./images/icon-up.svg" alt="increased">
+                <p class="increase">303%</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- card 6 -->
+          <div class="container__daily-card hover-overlay">
+            <div class="container__daily-card-header">
+              <span>Likes</span>
+              <img src="./images/icon-twitter.svg" alt="facebook">
+            </div>
+            <div class="container__daily-card-numbers">
+              <h1>507</h1>
+              <div class="follower-change">
+                <img src="./images/icon-up.svg" alt="increased">
+                <p class="increase">553%</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- card 7 -->
+          <div class="container__daily-card hover-overlay">
+            <div class="container__daily-card-header">
+              <span>Likes</span>
+              <img src="./images/icon-youtube.svg" alt="facebook">
+            </div>
+            <div class="container__daily-card-numbers">
+              <h1>107</h1>
+              <div class="follower-change">
+                <img src="./images/icon-down.svg" alt="increased">
+                <p class="decrease">19%</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- card 8 -->
+          <div class="container__daily-card hover-overlay">
+            <div class="container__daily-card-header">
+              <span>Page Views</span>
+              <img src="./images/icon-youtube.svg" alt="facebook">
+            </div>
+            <div class="container__daily-card-numbers">
+              <h1>1407</h1>
+              <div class="follower-change">
+                <img src="./images/icon-down.svg" alt="increased">
+                <p class="decrease">12%</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+
+    </div>
+
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Your Name Here</a>.
+    </div>
+    
+  </body>
+</html>

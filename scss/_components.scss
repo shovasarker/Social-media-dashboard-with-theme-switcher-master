@@ -1,0 +1,214 @@
+.container {
+    position: relative;
+    height: 100%;
+    padding: 40px 24px 45px 24px;
+    background: $veryDarkBlue;
+    color: $desaturatedBlue;
+    z-index: 1;
+
+    @include breakpoint-fixed-up(1150px) {
+        padding-left: 7%;
+        padding-right: 7%;
+    }
+
+    @include breakpoint-up(xlarge) {
+        padding-left: 10%;
+        padding-right: 10%;
+        height: 100vh;
+    }
+
+    &__overlay {
+        height: 250px;
+        width: 100%;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+        background-color: $veryLightDarkBlue;
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        right: 0%;
+        z-index: -1;
+    }
+
+    &__header {
+        margin-bottom: 24px;
+        @include breakpoint-up(large) {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 48px;
+        }
+    }
+
+    &__title {
+
+        > h2 {
+            margin-bottom: 10px;
+            color: $white;
+            @include breakpoint-up(large) {
+                margin-bottom: 16px;
+            }
+        }
+
+        > p {
+            line-height: 14px;
+            margin-bottom: 24px;
+            @include breakpoint-up(large) {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    &__theme-toggle {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 18px 0;
+        border-top: 1px solid $darkGrayishBlue;
+
+        >span {
+            margin-right: 10px;
+        }
+
+        @include breakpoint-up(large){
+            border-top: none;
+            padding: 0 0;
+        }
+    }
+
+    &__social-followers {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 24px;
+        margin-bottom: 48px;
+
+        @include breakpoint-up(medium){
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            row-gap: 16px;
+        }
+
+        @include breakpoint-up(large){
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: 1fr;
+        }
+    }
+
+    &__followers-card {
+        border-radius: 5px;
+        background-color: $darkDesaturatedBlue;
+        overflow: hidden;
+        cursor: pointer;
+        .border {
+            height: 5px;
+            width: 100%;
+        }
+
+        &-body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 28px 0;
+
+            > h1 {
+                line-height: 45px;
+                font-size: 54px;
+                color: $white;
+                margin-bottom: 14px;
+            }
+
+            > span {
+                line-height: 12px;
+                text-transform: uppercase;
+                letter-spacing: 4px;
+                margin-bottom: 30px;
+            }
+        }
+        &-title {
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+            > img {
+                margin-right: 10px;
+            }
+
+        }
+
+
+
+
+        &.facebook {
+            .border {
+                background: $facebook;
+            }
+        }
+        &.twitter {
+            .border {
+                background: $twitter;
+            }
+        }
+        &.instagram {
+            .border {
+                background: $instagram;
+            }
+        }
+        &.youtube {
+            .border {
+                background: $youTube;
+            }
+        }
+
+
+    }
+
+
+    &__daily {
+        > h2 {
+            margin-bottom: 26px;
+        }
+
+        &-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 16px;
+
+            @include breakpoint-up(medium){
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 1fr 1fr;
+                column-gap: 24px;
+            }
+
+            @include breakpoint-up(large) {
+                grid-template-columns: repeat(4, 1fr);
+                grid-template-rows: 1fr 1fr;
+            }
+        }
+
+        &-card {
+            padding: 26px;
+            border-radius: 5px;
+            background-color: $darkDesaturatedBlue;
+            cursor: pointer;
+            &-header {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-bottom: 25px;
+                padding-right: 6px;
+            }
+
+            &-numbers {
+                display: flex;
+                align-items: flex-end;
+                justify-content: space-between;
+                padding-right: 6px;
+                > h1 {
+                    line-height: 24px;
+                    color: $white;
+                }
+            }
+        }
+    }
+
+}
