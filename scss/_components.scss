@@ -6,6 +6,12 @@
     color: $desaturatedBlue;
     z-index: 1;
 
+    @include breakpoint-up(large){
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
     @include breakpoint-fixed-up(1150px) {
         padding-left: 7%;
         padding-right: 7%;
